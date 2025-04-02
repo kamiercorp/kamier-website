@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changsha Camille - Professional Animal Identification Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c6e49;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd166;
+        }
+
+        /* Product Categories Section */
+        .product-categories {
+            margin-top: 40px;
+        }
+
+        .product-categories h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c6e49;
+        }
+
+        .category {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .category h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #2c6e49;
+        }
+
+        .category h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .category h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            flex: 1 1 calc(33.333% - 20px);
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .product-item p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .view-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #2c6e49;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .view-more:hover {
+            color: #1a4b32;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c6e49;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+
+            .product-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-item {
+                flex: 1 1 100%;
+            }
+
+            .product-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Our Animal Identification Products</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="product-categories">
+            <h2>Product Categories</h2>
+
+            <!-- RFID Ear Tags -->
+            <div class="category">
+                <h3><a href="rfid-ear-tags.html">RFID Ear Tags</a></h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/rfid-cattle.jpg" alt="RFID Cattle Ear Tag" class="product-image">
+                        <p>RFID Cattle Ear Tag - Standard</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/rfid-sheep.jpg" alt="RFID Sheep Ear Tag" class="product-image">
+                        <p>RFID Sheep/Goat Ear Tag</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/rfid-pig.jpg" alt="RFID Pig Ear Tag" class="product-image">
+                        <p>RFID Pig Ear Tag</p>
+                    </div>
+                </div>
+                <a href="rfid-ear-tags.html" class="view-more">View More RFID Options</a>
+            </div>
+
+            <!-- Reflective Ear Tags -->
+            <div class="category">
+                <h3><a href="reflective-ear-tags.html">Reflective Ear Tags</a></h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/reflective-cattle.jpg" alt="Reflective Cattle Tag" class="product-image">
+                        <p>Cattle Reflective Tag - Large</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/reflective-small.jpg" alt="Small Animal Reflective Tag" class="product-image">
+                        <p>Small Animal Reflective Tag</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/reflective-numbered.jpg" alt="Numbered Reflective Tag" class="product-image">
+                        <p>Numbered Reflective Tag</p>
+                    </div>
+                </div>
+                <a href="reflective-ear-tags.html" class="view-more">View More Reflective Options</a>
+            </div>
+
+            <!-- Ear Tag Applicators -->
+            <div class="category">
+                <h3><a href="applicators.html">Ear Tag Applicators</a></h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/applicator-standard.jpg" alt="Standard Applicator" class="product-image">
+                        <p>Standard Ear Tag Pliers</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/applicator-heavy.jpg" alt="Heavy Duty Applicator" class="product-image">
+                        <p>Heavy Duty Applicator</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/applicator-small.jpg" alt="Small Animal Applicator" class="product-image">
+                        <p>Small Animal Applicator</p>
+                    </div>
+                </div>
+                <a href="applicators.html" class="view-more">View More Applicators</a>
+            </div>
+
+            <!-- Veterinary Supplies -->
+            <div class="category">
+                <h3><a href="vet-supplies.html">Veterinary Supplies</a></h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/syringes.jpg" alt="Veterinary Syringes" class="product-image">
+                        <p>Disposable Syringes</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/needles.jpg" alt="Veterinary Needles" class="product-image">
+                        <p>Sterile Needles</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/marker.jpg" alt="Livestock Marker" class="product-image">
+                        <p>Livestock Marker Pen</p>
+                    </div>
+                </div>
+                <a href="vet-supplies.html" class="view-more">View More Veterinary Supplies</a>
+            </div>
+
+            <!-- Small Animal Tags -->
+            <div class="category">
+                <h3><a href="small-animal-tags.html">Small Animal Tags</a></h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/rabbit-tag.jpg" alt="Rabbit Ear Tag" class="product-image">
+                        <p>Rabbit Identification Tag</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/mouse-tag.jpg" alt="Mouse Ear Tag" class="product-image">
+                        <p>Mouse/Rat Ear Tag</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/lab-tag.jpg" alt="Laboratory Tag" class="product-image">
+                        <p>Laboratory Animal Tag</p>
+                    </div>
+                </div>
+                <a href="small-animal-tags.html" class="view-more">View More Small Animal Tags</a>
+            </div>
+
+            <!-- Custom Solutions -->
+            <div class="category">
+                <h3><a href="custom-solutions.html">Custom Identification Solutions</a></h3>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="images/custom-rfid.jpg" alt="Custom RFID Tag" class="product-image">
+                        <p>Custom RFID Solutions</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/logo-tag.jpg" alt="Branded Ear Tag" class="product-image">
+                        <p>Branded Ear Tags</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/special-tag.jpg" alt="Special Application Tag" class="product-image">
+                        <p>Special Application Tags</p>
+                    </div>
+                </div>
+                <a href="custom-solutions.html" class="view-more">Learn About Custom Options</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Changsha Camille Business Co., Ltd. | Professional Animal Identification Solutions</p>
+        <p>Email: info@camillebusiness.com | Tel: +86 XXX XXXX XXXX</p>
+    </footer>
+</body>
+</html>
